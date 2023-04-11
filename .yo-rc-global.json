@@ -1,0 +1,8 @@
+{
+  "generator-jhipster:7.9.3": {
+    "promptValues": {
+      "packageName": "com.xplug.medical_aid_system",
+      "nativeLanguage": "en"
+    }
+  }
+}
