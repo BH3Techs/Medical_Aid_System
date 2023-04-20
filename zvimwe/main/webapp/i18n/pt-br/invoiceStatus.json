@@ -1,0 +1,12 @@
+{
+  "medicalAidSystemApp": {
+    "InvoiceStatus": {
+      "null": "",
+      "OPEN": "OPEN",
+      "EXPIRED": "EXPIRED",
+      "CLOSED": "CLOSED",
+      "COLLECTED": "COLLECTED",
+      "VOID": "VOID"
+    }
+  }
+}

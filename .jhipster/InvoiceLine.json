@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123256",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "invoice_line",
+  "fields": [
+    {
+      "fieldName": "paymentReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "InvoiceLine",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

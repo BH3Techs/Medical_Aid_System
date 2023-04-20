@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123237",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "benefit_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BenefitType",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "benefit",
+      "otherEntityRelationshipName": "benefitType",
+      "relationshipName": "benefit",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "planBenefit",
+      "otherEntityRelationshipName": "benefitType",
+      "relationshipName": "planBenefit",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

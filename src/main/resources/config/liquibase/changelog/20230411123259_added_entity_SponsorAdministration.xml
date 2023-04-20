@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity SponsorAdministration.
+    -->
+    <changeSet id="20230411123259-1" author="jhipster">
+        <createTable tableName="sponsor_administration">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="initial" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_of_birth" type="date">
+                <constraints nullable="false" />
+            </column>
+            <column name="sponsor_id" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="sponsor_type" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="contact_details_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_sponsor_administration__contact_details_id" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230411123259-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/sponsor_administration.csv"
+                  separator=";"
+                  tableName="sponsor_administration"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="first_name" type="string"/>
+            <column name="last_name" type="string"/>
+            <column name="initial" type="string"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="sponsor_id" type="string"/>
+            <column name="sponsor_type" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

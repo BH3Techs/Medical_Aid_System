@@ -1,0 +1,25 @@
+{
+  "medicalAidSystemApp": {
+    "invoiceLine": {
+      "home": {
+        "title": "Invoice Lines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Invoice Line",
+        "createOrEditLabel": "Criar ou editar Invoice Line",
+        "notFound": "Nenhum Invoice Lines encontrado"
+      },
+      "created": "Um novo Invoice Line foi criado com o identificador {{ param }}",
+      "updated": "Invoice Line com identificador {{ param }} foi actualizado",
+      "deleted": "Invoice Line com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Invoice Line {{ id }}?"
+      },
+      "detail": {
+        "title": "Invoice Line"
+      },
+      "id": "ID",
+      "paymentReason": "Payment Reason",
+      "amount": "Amount"
+    }
+  }
+}

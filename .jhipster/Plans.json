@@ -1,0 +1,83 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123233",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "plans",
+  "fields": [
+    {
+      "fieldName": "planCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "basePremium",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverAmount",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "coverPeriodUnit",
+      "fieldType": "PeriodUnit",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DAY,WEEK,MONTH,YEAR,LIFETIME"
+    },
+    {
+      "fieldName": "coverPeriodValue",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Plans",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "currency",
+      "otherEntityRelationshipName": "plans",
+      "relationshipName": "currency",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "planBenefit",
+      "otherEntityRelationshipName": "plans",
+      "relationshipName": "planBenefit",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "planBillingCycle",
+      "otherEntityRelationshipName": "plans",
+      "relationshipName": "planBillingCycle",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "policy",
+      "otherEntityRelationshipName": "plans",
+      "ownerSide": true,
+      "relationshipName": "policy",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "planCategory",
+      "otherEntityRelationshipName": "plans",
+      "relationshipName": "planCategory",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

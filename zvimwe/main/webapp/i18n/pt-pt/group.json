@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "group": {
+      "home": {
+        "title": "Groups",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Group",
+        "createOrEditLabel": "Criar ou editar Group",
+        "notFound": "Nenhum Groups encontrado"
+      },
+      "created": "Um novo Group foi criado com o identificador {{ param }}",
+      "updated": "Group com identificador {{ param }} foi actualizado",
+      "deleted": "Group com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Group"
+      },
+      "id": "ID",
+      "name": "Name",
+      "groupType": "Group Type",
+      "dateRegistered": "Date Registered",
+      "contactDetails": "Contact Details",
+      "bankingDetails": "Banking Details"
+    }
+  }
+}

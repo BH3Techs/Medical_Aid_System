@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity PlanBillingCycle.
+    -->
+    <changeSet id="20230404133148-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="plans_id"
+                                 baseTableName="plan_billing_cycle"
+                                 constraintName="fk_plan_billing_cycle__plans_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plans"/>
+    </changeSet>
+</databaseChangeLog>

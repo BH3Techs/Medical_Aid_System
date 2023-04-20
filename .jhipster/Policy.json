@@ -1,0 +1,87 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123242",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "policy",
+  "fields": [
+    {
+      "fieldName": "policyNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "suffix",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pricingGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nextOfKin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "memberIdentifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentPolicy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorIdentifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "PolicyStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ACTIVE,SUSPNDED,CLOSED,BLACKLISTED"
+    },
+    {
+      "fieldName": "balance",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Policy",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "planBillingCycle",
+      "ownerSide": true,
+      "relationshipName": "planBillingCycle",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "claim",
+      "otherEntityRelationshipName": "policy",
+      "relationshipName": "claim",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "nextOfKin",
+      "otherEntityRelationshipName": "policy",
+      "relationshipName": "nextOfKin",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "plans",
+      "otherEntityRelationshipName": "policy",
+      "ownerSide": false,
+      "relationshipName": "plans",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

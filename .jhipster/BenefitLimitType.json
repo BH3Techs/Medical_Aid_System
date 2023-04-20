@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123240",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "benefit_limit_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BenefitLimitType",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "benefitLimit",
+      "otherEntityRelationshipName": "benefitLimitType",
+      "relationshipName": "benefitLimit",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

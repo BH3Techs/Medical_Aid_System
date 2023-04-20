@@ -1,0 +1,35 @@
+{
+  "medicalAidSystemApp": {
+    "plans": {
+      "home": {
+        "title": "Plans",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Plans",
+        "createOrEditLabel": "Criar ou editar Plans",
+        "notFound": "Nenhum Plans encontrado"
+      },
+      "created": "Um novo Plans foi criado com o identificador {{ param }}",
+      "updated": "Um Plans foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Plans foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Plans {{ id }}?"
+      },
+      "detail": {
+        "title": "Plans"
+      },
+      "id": "ID",
+      "planCode": "Plan Code",
+      "name": "Name",
+      "basePremium": "Base Premium",
+      "coverAmount": "Cover Amount",
+      "coverPeriodUnit": "Cover Period Unit",
+      "coverPeriodValue": "Cover Period Value",
+      "active": "Active",
+      "currency": "Currency",
+      "planBenefit": "Plan Benefit",
+      "planBillingCycle": "Plan Billing Cycle",
+      "policy": "Policy",
+      "planCategory": "Plan Category"
+    }
+  }
+}

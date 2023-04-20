@@ -1,0 +1,29 @@
+{
+  "medicalAidSystemApp": {
+    "document": {
+      "home": {
+        "title": "Documents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Document",
+        "createOrEditLabel": "Criar ou editar Document",
+        "notFound": "Nenhum Documents encontrado"
+      },
+      "created": "Um novo Document foi criado com o identificador {{ param }}",
+      "updated": "Document com identificador {{ param }} foi actualizado",
+      "deleted": "Document com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Document {{ id }}?"
+      },
+      "detail": {
+        "title": "Document"
+      },
+      "id": "ID",
+      "format": "Format",
+      "name": "Name",
+      "ownerType": "Owner Type",
+      "dateCreated": "Date Created",
+      "validity": "Validity",
+      "documentType": "Document Type"
+    }
+  }
+}

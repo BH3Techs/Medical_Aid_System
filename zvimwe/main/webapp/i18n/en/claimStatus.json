@@ -1,0 +1,10 @@
+{
+  "medicalAidSystemApp": {
+    "ClaimStatus": {
+      "null": "",
+      "PENDING": "PENDING",
+      "APPROVED": "APPROVED",
+      "CLOSED": "CLOSED"
+    }
+  }
+}

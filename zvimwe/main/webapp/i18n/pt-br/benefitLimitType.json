@@ -1,0 +1,26 @@
+{
+  "medicalAidSystemApp": {
+    "benefitLimitType": {
+      "home": {
+        "title": "Benefit Limit Types",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Benefit Limit Type",
+        "createOrEditLabel": "Criar ou editar Benefit Limit Type",
+        "notFound": "Nenhum Benefit Limit Type encontrado"
+      },
+      "created": "Um novo Benefit Limit Type foi criado com o identificador {{ param }}",
+      "updated": "Um Benefit Limit Type foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Benefit Limit Type foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Benefit Limit Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Benefit Limit Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "active": "Active",
+      "benefitLimit": "Benefit Limit"
+    }
+  }
+}

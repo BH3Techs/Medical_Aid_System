@@ -1,0 +1,9 @@
+{
+  "medicalAidSystemApp": {
+    "DateConfiguration": {
+      "null": "",
+      "DYNAMIC": "DYNAMIC",
+      "STATIC": "STATIC"
+    }
+  }
+}

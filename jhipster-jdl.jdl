@@ -1,0 +1,282 @@
+
+entity PlanCategory {
+	name String required
+    description String
+    dateCreated Instant
+    active Boolean required
+}
+
+entity Plans {
+	planCode String required unique
+	name String required
+
+    basePremium String
+    coverAmount String required
+    coverPeriodUnit PeriodUnit required
+    coverPeriodValue Integer required
+    active Boolean required
+}
+
+entity Currency{
+	currencyName String required unique
+    currencyCode String required unique
+    active Boolean
+}
+entity PlanBenefit {
+	name String required
+    waitingPeriodUnit PeriodUnit required
+    waitingPeriodValue Integer required
+    description String required
+    active Boolean required
+}
+entity Benefit{
+	name String required
+    description String required
+    benefitCode String required unique
+    active Boolean required
+    
+}
+entity BenefitType{
+	name String required
+    description String required
+    active Boolean required
+}
+entity Tariff{
+	name String required
+    price Double
+    active Boolean required
+}
+entity BenefitLimit{
+    limitValue String required
+    limitPeriodUnit PeriodUnit required
+    limitPeriodValue Integer required
+    active Boolean required
+}
+entity BenefitLimitType{
+	name String required
+    active Boolean required
+}
+entity BenefitClaimTracker{
+	resetDate LocalDate
+    nextPossibleClaimDate LocalDate
+    currentLimitValue String
+    currentLimitPeriod Integer
+    
+}
+enum PeriodUnit{
+	DAY, WEEK, MONTH, YEAR, LIFETIME
+}
+
+entity Policy {
+	policyNumber String required
+    suffix String required
+	pricingGroup String
+	nextOfKin String
+	memberIdentifier String
+    parentPolicy String
+    sponsorIdentifier String
+    sponsorType String
+    status PolicyStatus required
+    balance Double required
+}
+entity Document{
+	format String required
+    name String required
+    ownerType OwnerType
+    dateCreated Instant 
+    validity Boolean required
+}
+enum OwnerType{
+	SPONSOR_DOCUMENT, POLICY_DOCUMENT, SERVICE_PROVIDER_DOCUMENT, SPONSOR_ADMINISTRATOR
+    }
+entity DocumentType{
+	name String required
+    description String required
+}
+
+entity Individual {
+	firstName String required
+	lastName String required
+    initial String 
+    dateOfBirth LocalDate required
+    gender String
+    nationalId String pattern(/^\d{2}-[0-9]{5}[\w]\d{2}$/)
+    
+}
+entity Group {
+	name String
+    groupType String
+    dateRegistered LocalDate required
+}
+entity NextOfKin{
+	name String required
+    identifier String required
+}
+
+entity ContactDetails {
+	primaryPhoneNumber String required pattern(/^[0][7][0-9]{8}$/)
+    secondaryPhoneNumber String  pattern(/^[0][7][0-9]{8}$/)
+    emailAddress String 
+    physicalAddress String required
+    whatsappNumber String 
+    
+}
+entity Address {
+	streetAddress String // CHekure P School PO Box 452 
+    surburb String // Mpandawana
+    province String //Masvingo
+    city String //Masvingo
+    country String //Zimbabwe
+}
+
+entity BankingDetails {
+	accountName String required
+    accountNumber String required
+    swiftCode String required
+    bankName String required
+}
+
+entity Wallet {
+	name String required
+	balance Double required	
+    ownerIdentifier String required
+    ownerType WalletOwnerType required
+    description String 
+    active Boolean
+}
+
+// Quantity Units
+entity Claim {
+	submissionDate LocalDate required
+    approvalDate LocalDate
+    processingDate LocalDate
+    claimStatus ClaimStatus
+    diagnosis String
+    claimant String
+    relationshipToMember String
+}
+entity TarrifClaim {
+    tarrifCode String required
+    quantity Integer required
+    amount Double required
+    description String required
+}
+
+entity ServiceProvider {
+	name String required
+    AHFOZNumber String 
+    description Boolean
+}
+entity Invoice {
+	invoiceNumber String required
+    invoiceStatus InvoiceStatus required
+    amountPayable Double required
+	invoiceDate Instant required
+    nextInvoiceDate LocalDate required
+    invoiceAmount Double required
+    expectedPaymentDate LocalDate
+    gracePeriod LocalDate required
+}
+entity InvoiceLine{
+	paymentReason String
+    amount Double 
+}
+
+//Risk Profile.
+entity RiskProfile{
+    totalRiskScore Double
+    lifeStyle String required
+    
+}
+
+entity Condition{
+	name String required
+    details TextBlob required
+}
+
+entity SponsorAdministration{
+	firstName String required
+    lastName String required
+    initial String 
+    dateOfBirth LocalDate required
+    sponsorId String required
+    sponsorType SponsorType required
+}
+entity PlanBillingCycle{
+	periodUnit PeriodUnit required
+    periodValue Integer required
+    dateConfiguration DateConfiguration
+    billingDate String
+}
+enum DateConfiguration{
+	DYNAMIC, STATIC
+}
+enum InvoiceStatus{
+	OPEN, EXPIRED, CLOSED, COLLECTED, VOID 
+}
+enum ClaimStatus{
+	PENDING, APPROVED, CLOSED
+}
+enum WalletOwnerType {
+    POLICY_SPONSOR, POLICY_MEMBER
+}
+enum PolicyStatus {
+    ACTIVE, SUSPNDED, CLOSED, BLACKLISTED
+}
+enum SponsorType {
+    INDIVIDUAL, CORPORATE, SME, GROUP
+}
+
+relationship OneToMany {
+	PlanCategory to Plans{planCategory}
+    Plans{currency} to Currency
+    Currency to Tariff{currency}
+    Plans{planBenefit} to PlanBenefit
+    BenefitType{benefit} to Benefit
+    BenefitType to PlanBenefit{benefitType}
+    BenefitLimitType{benefitLimit} to BenefitLimit
+    PlanBenefit{benefitLimit} to BenefitLimit
+    Benefit{tariff} to Tariff
+    Currency to Wallet{currency}
+    Policy to Claim{policy}
+    ServiceProvider to Claim{serviceProvider}
+    DocumentType to Document{documentType}
+    RiskProfile{condition} to Condition
+    Policy{nextOfKin} to NextOfKin
+    Plans{planBillingCycle} to PlanBillingCycle
+    Currency to TarrifClaim{currency}
+    Claim{tarrifClaim} to TarrifClaim
+}
+	
+relationship OneToOne {
+	ServiceProvider{contactDetails} to ContactDetails
+    Individual{contactDetails} to ContactDetails
+    Group{contactDetails} to ContactDetails
+    Individual{bankingDetails} to BankingDetails
+    Group{bankingDetails} to BankingDetails
+    Invoice{policy} to Policy
+    Invoice{contactDetails} to ContactDetails
+    Individual{riskProfile} to RiskProfile
+    NextOfKin{contactDetails} to ContactDetails 
+    SponsorAdministration{contactDetails}to ContactDetails
+    Policy{planBillingCycle} to PlanBillingCycle
+    BenefitClaimTracker{benefitLimit} to BenefitLimit
+}
+
+relationship ManyToMany {
+	//Plan{task(title)} to Policy{job}
+    Plans{policy} to Policy{plans}
+}
+
+// Set pagination options
+paginate all with infinite-scroll		
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+				

@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "planBillingCycle": {
+      "home": {
+        "title": "Plan Billing Cycles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Plan Billing Cycle",
+        "createOrEditLabel": "Create or edit a Plan Billing Cycle",
+        "notFound": "No Plan Billing Cycles found"
+      },
+      "created": "A new Plan Billing Cycle is created with identifier {{ param }}",
+      "updated": "A Plan Billing Cycle is updated with identifier {{ param }}",
+      "deleted": "A Plan Billing Cycle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Plan Billing Cycle {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan Billing Cycle"
+      },
+      "id": "ID",
+      "periodUnit": "Period Unit",
+      "periodValue": "Period Value",
+      "dateConfiguration": "Date Configuration",
+      "billingDate": "Billing Date",
+      "plans": "Plans"
+    }
+  }
+}

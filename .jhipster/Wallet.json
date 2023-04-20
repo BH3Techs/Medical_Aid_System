@@ -1,0 +1,52 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123251",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "wallet",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "balance",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ownerIdentifier",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ownerType",
+      "fieldType": "WalletOwnerType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "POLICY_SPONSOR,POLICY_MEMBER"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Wallet",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "currency",
+      "otherEntityRelationshipName": "wallet",
+      "relationshipName": "currency",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

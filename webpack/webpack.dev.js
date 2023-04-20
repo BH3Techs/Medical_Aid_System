@@ -97,7 +97,7 @@ module.exports = async options =>
       ),
       new WebpackNotifierPlugin({
         title: 'Medical Aid System',
-        contentImage: path.join(__dirname, 'logo-jhipster.png'),
+        contentImage: path.join(__dirname, 'bonvie.png'),
       }),
     ].filter(Boolean),
   });

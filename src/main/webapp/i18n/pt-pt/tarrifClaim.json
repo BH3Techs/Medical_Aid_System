@@ -1,0 +1,29 @@
+{
+  "medicalAidSystemApp": {
+    "tarrifClaim": {
+      "home": {
+        "title": "Tarrif Claims",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Tarrif Claim",
+        "createOrEditLabel": "Criar ou editar Tarrif Claim",
+        "notFound": "Nenhum Tarrif Claims encontrado"
+      },
+      "created": "Um novo Tarrif Claim foi criado com o identificador {{ param }}",
+      "updated": "Tarrif Claim com identificador {{ param }} foi actualizado",
+      "deleted": "Tarrif Claim com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Tarrif Claim {{ id }}?"
+      },
+      "detail": {
+        "title": "Tarrif Claim"
+      },
+      "id": "ID",
+      "tarrifCode": "Tarrif Code",
+      "quantity": "Quantity",
+      "amount": "Amount",
+      "description": "Description",
+      "currency": "Currency",
+      "claim": "Claim"
+    }
+  }
+}

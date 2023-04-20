@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123258",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "condition",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "details",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Condition",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "riskProfile",
+      "otherEntityRelationshipName": "condition",
+      "relationshipName": "riskProfile",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

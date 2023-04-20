@@ -1,0 +1,50 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123239",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "benefit_limit",
+  "fields": [
+    {
+      "fieldName": "limitValue",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "limitPeriodUnit",
+      "fieldType": "PeriodUnit",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DAY,WEEK,MONTH,YEAR,LIFETIME"
+    },
+    {
+      "fieldName": "limitPeriodValue",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BenefitLimit",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "benefitLimitType",
+      "otherEntityRelationshipName": "benefitLimit",
+      "relationshipName": "benefitLimitType",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "planBenefit",
+      "otherEntityRelationshipName": "benefitLimit",
+      "relationshipName": "planBenefit",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,26 @@
+{
+  "medicalAidSystemApp": {
+    "riskProfile": {
+      "home": {
+        "title": "Risk Profiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Risk Profile",
+        "createOrEditLabel": "Create or edit a Risk Profile",
+        "notFound": "No Risk Profiles found"
+      },
+      "created": "A new Risk Profile is created with identifier {{ param }}",
+      "updated": "A Risk Profile is updated with identifier {{ param }}",
+      "deleted": "A Risk Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Risk Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Risk Profile"
+      },
+      "id": "ID",
+      "totalRiskScore": "Total Risk Score",
+      "lifeStyle": "Life Style",
+      "condition": "Condition"
+    }
+  }
+}

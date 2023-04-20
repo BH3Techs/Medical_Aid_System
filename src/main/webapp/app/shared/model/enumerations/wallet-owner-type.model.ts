@@ -1,0 +1,5 @@
+export enum WalletOwnerType {
+  POLICY_SPONSOR = 'POLICY_SPONSOR',
+
+  POLICY_MEMBER = 'POLICY_MEMBER',
+}

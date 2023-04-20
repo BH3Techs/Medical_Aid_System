@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Individual.
+    -->
+    <changeSet id="20230411123245-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="contact_details_id"
+                                 baseTableName="individual"
+                                 constraintName="fk_individual__contact_details_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="contact_details"/>
+
+        <addForeignKeyConstraint baseColumnNames="banking_details_id"
+                                 baseTableName="individual"
+                                 constraintName="fk_individual__banking_details_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="banking_details"/>
+
+        <addForeignKeyConstraint baseColumnNames="risk_profile_id"
+                                 baseTableName="individual"
+                                 constraintName="fk_individual__risk_profile_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="risk_profile"/>
+    </changeSet>
+</databaseChangeLog>

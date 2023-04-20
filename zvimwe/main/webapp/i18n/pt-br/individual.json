@@ -1,0 +1,32 @@
+{
+  "medicalAidSystemApp": {
+    "individual": {
+      "home": {
+        "title": "Individuals",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Individual",
+        "createOrEditLabel": "Criar ou editar Individual",
+        "notFound": "Nenhum Individual encontrado"
+      },
+      "created": "Um novo Individual foi criado com o identificador {{ param }}",
+      "updated": "Um Individual foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Individual foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Individual {{ id }}?"
+      },
+      "detail": {
+        "title": "Individual"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "initial": "Initial",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "nationalId": "National Id",
+      "contactDetails": "Contact Details",
+      "bankingDetails": "Banking Details",
+      "riskProfile": "Risk Profile"
+    }
+  }
+}

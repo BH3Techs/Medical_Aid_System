@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123300",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "plan_billing_cycle",
+  "fields": [
+    {
+      "fieldName": "periodUnit",
+      "fieldType": "PeriodUnit",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DAY,WEEK,MONTH,YEAR,LIFETIME"
+    },
+    {
+      "fieldName": "periodValue",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateConfiguration",
+      "fieldType": "DateConfiguration",
+      "fieldValues": "DYNAMIC,STATIC"
+    },
+    {
+      "fieldName": "billingDate",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PlanBillingCycle",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "plans",
+      "otherEntityRelationshipName": "planBillingCycle",
+      "relationshipName": "plans",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

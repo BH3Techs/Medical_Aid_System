@@ -1,0 +1,53 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123259",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sponsor_administration",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "initial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sponsorId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sponsorType",
+      "fieldType": "SponsorType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "INDIVIDUAL,CORPORATE,SME,GROUP"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SponsorAdministration",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contactDetails",
+      "ownerSide": true,
+      "relationshipName": "contactDetails",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

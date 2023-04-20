@@ -1,0 +1,26 @@
+{
+  "medicalAidSystemApp": {
+    "documentType": {
+      "home": {
+        "title": "Document Types",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Document Type",
+        "createOrEditLabel": "Criar ou editar Document Type",
+        "notFound": "Nenhum Document Type encontrado"
+      },
+      "created": "Um novo Document Type foi criado com o identificador {{ param }}",
+      "updated": "Um Document Type foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Document Type foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Document Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Document Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "document": "Document"
+    }
+  }
+}

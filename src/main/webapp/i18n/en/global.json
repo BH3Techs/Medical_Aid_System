@@ -7,6 +7,35 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "planCategory": "Plan Category",
+        "plans": "Plans",
+        "currency": "Currency",
+        "planBenefit": "Plan Benefit",
+        "benefit": "Benefit",
+        "benefitType": "Benefit Type",
+        "tariff": "Tariff",
+        "benefitLimit": "Benefit Limit",
+        "benefitLimitType": "Benefit Limit Type",
+        "benefitClaimTracker": "Benefit Claim Tracker",
+        "policy": "Policy",
+        "document": "Document",
+        "documentType": "Document Type",
+        "individual": "Individual",
+        "group": "Group",
+        "nextOfKin": "Next Of Kin",
+        "contactDetails": "Contact Details",
+        "address": "Address",
+        "bankingDetails": "Banking Details",
+        "wallet": "Wallet",
+        "claim": "Claim",
+        "tarrifClaim": "Tarrif Claim",
+        "serviceProvider": "Service Provider",
+        "invoice": "Invoice",
+        "invoiceLine": "Invoice Line",
+        "riskProfile": "Risk Profile",
+        "condition": "Condition",
+        "sponsorAdministration": "Sponsor Administration",
+        "planBillingCycle": "Plan Billing Cycle",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -143,5 +172,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "This is your footer"
+  "footer": "@XPlug2023. All rights reserved"
 }

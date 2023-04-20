@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Plans.
+    -->
+    <changeSet id="20230404133121-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="plans_id"
+                                 baseTableName="rel_plans__policy"
+                                 constraintName="fk_rel_plans__policy__plans_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plans"/>
+
+        <addForeignKeyConstraint baseColumnNames="policy_id"
+                                 baseTableName="rel_plans__policy"
+                                 constraintName="fk_rel_plans__policy__policy_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="policy"/>
+
+        <addForeignKeyConstraint baseColumnNames="plan_category_id"
+                                 baseTableName="plans"
+                                 constraintName="fk_plans__plan_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plan_category"/>
+    </changeSet>
+</databaseChangeLog>

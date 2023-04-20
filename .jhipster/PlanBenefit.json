@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123235",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "plan_benefit",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "waitingPeriodUnit",
+      "fieldType": "PeriodUnit",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DAY,WEEK,MONTH,YEAR,LIFETIME"
+    },
+    {
+      "fieldName": "waitingPeriodValue",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PlanBenefit",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "benefitLimit",
+      "otherEntityRelationshipName": "planBenefit",
+      "relationshipName": "benefitLimit",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "plans",
+      "otherEntityRelationshipName": "planBenefit",
+      "relationshipName": "plans",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "benefitType",
+      "otherEntityRelationshipName": "planBenefit",
+      "relationshipName": "benefitType",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

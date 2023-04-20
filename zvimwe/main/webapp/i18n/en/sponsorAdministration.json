@@ -1,0 +1,30 @@
+{
+  "medicalAidSystemApp": {
+    "sponsorAdministration": {
+      "home": {
+        "title": "Sponsor Administrations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sponsor Administration",
+        "createOrEditLabel": "Create or edit a Sponsor Administration",
+        "notFound": "No Sponsor Administrations found"
+      },
+      "created": "A new Sponsor Administration is created with identifier {{ param }}",
+      "updated": "A Sponsor Administration is updated with identifier {{ param }}",
+      "deleted": "A Sponsor Administration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sponsor Administration {{ id }}?"
+      },
+      "detail": {
+        "title": "Sponsor Administration"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "initial": "Initial",
+      "dateOfBirth": "Date Of Birth",
+      "sponsorId": "Sponsor Id",
+      "sponsorType": "Sponsor Type",
+      "contactDetails": "Contact Details"
+    }
+  }
+}

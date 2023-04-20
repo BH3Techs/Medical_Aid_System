@@ -1,0 +1,31 @@
+{
+  "medicalAidSystemApp": {
+    "planBenefit": {
+      "home": {
+        "title": "Plan Benefits",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Plan Benefit",
+        "createOrEditLabel": "Criar ou editar Plan Benefit",
+        "notFound": "Nenhum Plan Benefit encontrado"
+      },
+      "created": "Um novo Plan Benefit foi criado com o identificador {{ param }}",
+      "updated": "Um Plan Benefit foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Plan Benefit foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Plan Benefit {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan Benefit"
+      },
+      "id": "ID",
+      "name": "Name",
+      "waitingPeriodUnit": "Waiting Period Unit",
+      "waitingPeriodValue": "Waiting Period Value",
+      "description": "Description",
+      "active": "Active",
+      "benefitLimit": "Benefit Limit",
+      "plans": "Plans",
+      "benefitType": "Benefit Type"
+    }
+  }
+}

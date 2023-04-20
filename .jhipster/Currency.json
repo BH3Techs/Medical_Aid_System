@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123234",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "currency",
+  "fields": [
+    {
+      "fieldName": "currencyName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Currency",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tariff",
+      "otherEntityRelationshipName": "currency",
+      "relationshipName": "tariff",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "wallet",
+      "otherEntityRelationshipName": "currency",
+      "relationshipName": "wallet",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "tarrifClaim",
+      "otherEntityRelationshipName": "currency",
+      "relationshipName": "tarrifClaim",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "plans",
+      "otherEntityRelationshipName": "currency",
+      "relationshipName": "plans",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

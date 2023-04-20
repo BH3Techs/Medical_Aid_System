@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123254",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "service_provider",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "aHFOZNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ServiceProvider",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contactDetails",
+      "ownerSide": true,
+      "relationshipName": "contactDetails",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "claim",
+      "otherEntityRelationshipName": "serviceProvider",
+      "relationshipName": "claim",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

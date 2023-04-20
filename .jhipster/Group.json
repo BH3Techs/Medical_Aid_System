@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123246",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "jhi_group",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "groupType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateRegistered",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Group",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contactDetails",
+      "ownerSide": true,
+      "relationshipName": "contactDetails",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "bankingDetails",
+      "ownerSide": true,
+      "relationshipName": "bankingDetails",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

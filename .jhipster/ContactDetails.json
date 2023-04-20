@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123248",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contact_details",
+  "fields": [
+    {
+      "fieldName": "primaryPhoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[0][7][0-9]{8}$"
+    },
+    {
+      "fieldName": "secondaryPhoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[0][7][0-9]{8}$"
+    },
+    {
+      "fieldName": "emailAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "physicalAddress",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "whatsappNumber",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ContactDetails",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Claim.
+    -->
+    <changeSet id="20230411123252-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="policy_id"
+                                 baseTableName="claim"
+                                 constraintName="fk_claim__policy_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="policy"/>
+
+        <addForeignKeyConstraint baseColumnNames="service_provider_id"
+                                 baseTableName="claim"
+                                 constraintName="fk_claim__service_provider_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_provider"/>
+    </changeSet>
+</databaseChangeLog>

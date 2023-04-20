@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123241",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "benefit_claim_tracker",
+  "fields": [
+    {
+      "fieldName": "resetDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "nextPossibleClaimDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "currentLimitValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentLimitPeriod",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BenefitClaimTracker",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "benefitLimit",
+      "ownerSide": true,
+      "relationshipName": "benefitLimit",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

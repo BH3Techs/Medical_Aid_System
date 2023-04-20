@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123243",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "format",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ownerType",
+      "fieldType": "OwnerType",
+      "fieldValues": "SPONSOR_DOCUMENT,POLICY_DOCUMENT,SERVICE_PROVIDER_DOCUMENT,SPONSOR_ADMINISTRATOR"
+    },
+    {
+      "fieldName": "dateCreated",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "validity",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Document",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "documentType",
+      "otherEntityRelationshipName": "document",
+      "relationshipName": "documentType",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

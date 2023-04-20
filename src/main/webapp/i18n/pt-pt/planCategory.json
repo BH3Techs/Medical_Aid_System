@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "planCategory": {
+      "home": {
+        "title": "Plan Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Plan Category",
+        "createOrEditLabel": "Criar ou editar Plan Category",
+        "notFound": "Nenhum Plan Categories encontrado"
+      },
+      "created": "Um novo Plan Category foi criado com o identificador {{ param }}",
+      "updated": "Plan Category com identificador {{ param }} foi actualizado",
+      "deleted": "Plan Category com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Plan Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan Category"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "dateCreated": "Date Created",
+      "active": "Active",
+      "plans": "Plans"
+    }
+  }
+}

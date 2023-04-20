@@ -1,0 +1,27 @@
+{
+  "medicalAidSystemApp": {
+    "nextOfKin": {
+      "home": {
+        "title": "Next Of Kins",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Next Of Kin",
+        "createOrEditLabel": "Criar ou editar Next Of Kin",
+        "notFound": "Nenhum Next Of Kin encontrado"
+      },
+      "created": "Um novo Next Of Kin foi criado com o identificador {{ param }}",
+      "updated": "Um Next Of Kin foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Next Of Kin foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Next Of Kin {{ id }}?"
+      },
+      "detail": {
+        "title": "Next Of Kin"
+      },
+      "id": "ID",
+      "name": "Name",
+      "identifier": "Identifier",
+      "contactDetails": "Contact Details",
+      "policy": "Policy"
+    }
+  }
+}

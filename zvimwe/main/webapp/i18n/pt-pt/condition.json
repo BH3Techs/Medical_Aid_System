@@ -1,0 +1,26 @@
+{
+  "medicalAidSystemApp": {
+    "condition": {
+      "home": {
+        "title": "Conditions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Condition",
+        "createOrEditLabel": "Criar ou editar Condition",
+        "notFound": "Nenhum Conditions encontrado"
+      },
+      "created": "Um novo Condition foi criado com o identificador {{ param }}",
+      "updated": "Condition com identificador {{ param }} foi actualizado",
+      "deleted": "Condition com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Condition {{ id }}?"
+      },
+      "detail": {
+        "title": "Condition"
+      },
+      "id": "ID",
+      "name": "Name",
+      "details": "Details",
+      "riskProfile": "Risk Profile"
+    }
+  }
+}

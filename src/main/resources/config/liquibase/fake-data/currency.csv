@@ -1,0 +1,11 @@
+id;currency_name;currency_code;active
+1;Tunisian Dinar;KRW;true
+2;Bahamian Dollar;XPF;true
+3;European Monetary Unit (E.M.U.-6);RSD;true
+4;Sudanese Pound;BSD;true
+5;Bermudian Dollar (customarily known as Bermuda Dollar);XPT;true
+6;Trinidad and Tobago Dollar;TND;true
+7;Dong;LSL;true
+8;Liberian Dollar;XTS;false
+9;Argentine Peso;LKR;false
+10;Syrian Pound;VND;true

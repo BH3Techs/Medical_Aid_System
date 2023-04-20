@@ -1,0 +1,17 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<databaseChangeLog-->
+<!--    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"-->
+<!--    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">-->
+<!--    &lt;!&ndash;-->
+<!--        Added the constraints for entity PlanCategory.-->
+<!--    &ndash;&gt;-->
+<!--    <changeSet id="20230404133120-2" author="jhipster">-->
+
+<!--        <addForeignKeyConstraint baseColumnNames="plans_id"-->
+<!--                                 baseTableName="plan_category"-->
+<!--                                 constraintName="fk_plan_category__plan_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="plans"/>-->
+<!--    </changeSet>-->
+<!--</databaseChangeLog>-->

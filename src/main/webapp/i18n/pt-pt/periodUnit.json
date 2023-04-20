@@ -1,0 +1,12 @@
+{
+  "medicalAidSystemApp": {
+    "PeriodUnit": {
+      "null": "",
+      "DAY": "DAY",
+      "WEEK": "WEEK",
+      "MONTH": "MONTH",
+      "YEAR": "YEAR",
+      "LIFETIME": "LIFETIME"
+    }
+  }
+}

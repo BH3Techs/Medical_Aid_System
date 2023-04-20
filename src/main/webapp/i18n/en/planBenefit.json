@@ -1,0 +1,31 @@
+{
+  "medicalAidSystemApp": {
+    "planBenefit": {
+      "home": {
+        "title": "Plan Benefits",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Plan Benefit",
+        "createOrEditLabel": "Create or edit a Plan Benefit",
+        "notFound": "No Plan Benefits found"
+      },
+      "created": "A new Plan Benefit is created with identifier {{ param }}",
+      "updated": "A Plan Benefit is updated with identifier {{ param }}",
+      "deleted": "A Plan Benefit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Plan Benefit {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan Benefit"
+      },
+      "id": "ID",
+      "name": "Name",
+      "waitingPeriodUnit": "Waiting Period Unit",
+      "waitingPeriodValue": "Waiting Period Value",
+      "description": "Description",
+      "active": "Active",
+      "benefitLimit": "Benefit Limit",
+      "plans": "Plans",
+      "benefitType": "Benefit Type"
+    }
+  }
+}

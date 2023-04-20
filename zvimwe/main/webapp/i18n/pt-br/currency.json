@@ -1,0 +1,30 @@
+{
+  "medicalAidSystemApp": {
+    "currency": {
+      "home": {
+        "title": "Currencies",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Currency",
+        "createOrEditLabel": "Criar ou editar Currency",
+        "notFound": "Nenhum Currency encontrado"
+      },
+      "created": "Um novo Currency foi criado com o identificador {{ param }}",
+      "updated": "Um Currency foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Currency foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Currency {{ id }}?"
+      },
+      "detail": {
+        "title": "Currency"
+      },
+      "id": "ID",
+      "currencyName": "Currency Name",
+      "currencyCode": "Currency Code",
+      "active": "Active",
+      "tariff": "Tariff",
+      "wallet": "Wallet",
+      "tarrifClaim": "Tarrif Claim",
+      "plans": "Plans"
+    }
+  }
+}

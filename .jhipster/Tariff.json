@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123238",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tariff",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tariff",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "currency",
+      "otherEntityRelationshipName": "tariff",
+      "relationshipName": "currency",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "benefit",
+      "otherEntityRelationshipName": "tariff",
+      "relationshipName": "benefit",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity BenefitLimit.
+    -->
+    <changeSet id="20230404133127-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="benefit_limit_type_id"
+                                 baseTableName="benefit_limit"
+                                 constraintName="fk_benefit_limit__benefit_limit_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="benefit_limit_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="plan_benefit_id"
+                                 baseTableName="benefit_limit"
+                                 constraintName="fk_benefit_limit__plan_benefit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plan_benefit"/>
+    </changeSet>
+</databaseChangeLog>

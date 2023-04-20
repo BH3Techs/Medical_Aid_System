@@ -1,0 +1,11 @@
+{
+  "medicalAidSystemApp": {
+    "SponsorType": {
+      "null": "",
+      "INDIVIDUAL": "INDIVIDUAL",
+      "CORPORATE": "CORPORATE",
+      "SME": "SME",
+      "GROUP": "GROUP"
+    }
+  }
+}

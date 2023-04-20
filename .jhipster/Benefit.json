@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123236",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "benefit",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "benefitCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Benefit",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tariff",
+      "otherEntityRelationshipName": "benefit",
+      "relationshipName": "tariff",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "benefitType",
+      "otherEntityRelationshipName": "benefit",
+      "relationshipName": "benefitType",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

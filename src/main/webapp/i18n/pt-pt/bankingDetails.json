@@ -1,0 +1,27 @@
+{
+  "medicalAidSystemApp": {
+    "bankingDetails": {
+      "home": {
+        "title": "Banking Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Banking Details",
+        "createOrEditLabel": "Criar ou editar Banking Details",
+        "notFound": "Nenhum Banking Details encontrado"
+      },
+      "created": "Um novo Banking Details foi criado com o identificador {{ param }}",
+      "updated": "Banking Details com identificador {{ param }} foi actualizado",
+      "deleted": "Banking Details com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Banking Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Banking Details"
+      },
+      "id": "ID",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "swiftCode": "Swift Code",
+      "bankName": "Bank Name"
+    }
+  }
+}

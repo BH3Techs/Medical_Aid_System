@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "serviceProvider": {
+      "home": {
+        "title": "Service Providers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Service Provider",
+        "createOrEditLabel": "Criar ou editar Service Provider",
+        "notFound": "Nenhum Service Providers encontrado"
+      },
+      "created": "Um novo Service Provider foi criado com o identificador {{ param }}",
+      "updated": "Service Provider com identificador {{ param }} foi actualizado",
+      "deleted": "Service Provider com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Service Provider {{ id }}?"
+      },
+      "detail": {
+        "title": "Service Provider"
+      },
+      "id": "ID",
+      "name": "Name",
+      "aHFOZNumber": "A HFOZ Number",
+      "description": "Description",
+      "contactDetails": "Contact Details",
+      "claim": "Claim"
+    }
+  }
+}

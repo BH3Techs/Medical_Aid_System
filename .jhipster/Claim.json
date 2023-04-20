@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123252",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "claim",
+  "fields": [
+    {
+      "fieldName": "submissionDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "approvalDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "processingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "claimStatus",
+      "fieldType": "ClaimStatus",
+      "fieldValues": "PENDING,APPROVED,CLOSED"
+    },
+    {
+      "fieldName": "diagnosis",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "claimant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "relationshipToMember",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Claim",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tarrifClaim",
+      "otherEntityRelationshipName": "claim",
+      "relationshipName": "tarrifClaim",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "policy",
+      "otherEntityRelationshipName": "claim",
+      "relationshipName": "policy",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "serviceProvider",
+      "otherEntityRelationshipName": "claim",
+      "relationshipName": "serviceProvider",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "benefitClaimTracker": {
+      "home": {
+        "title": "Benefit Claim Trackers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Benefit Claim Tracker",
+        "createOrEditLabel": "Create or edit a Benefit Claim Tracker",
+        "notFound": "No Benefit Claim Trackers found"
+      },
+      "created": "A new Benefit Claim Tracker is created with identifier {{ param }}",
+      "updated": "A Benefit Claim Tracker is updated with identifier {{ param }}",
+      "deleted": "A Benefit Claim Tracker is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Benefit Claim Tracker {{ id }}?"
+      },
+      "detail": {
+        "title": "Benefit Claim Tracker"
+      },
+      "id": "ID",
+      "resetDate": "Reset Date",
+      "nextPossibleClaimDate": "Next Possible Claim Date",
+      "currentLimitValue": "Current Limit Value",
+      "currentLimitPeriod": "Current Limit Period",
+      "benefitLimit": "Benefit Limit"
+    }
+  }
+}

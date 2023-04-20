@@ -1,0 +1,29 @@
+{
+  "medicalAidSystemApp": {
+    "benefit": {
+      "home": {
+        "title": "Benefits",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Benefit",
+        "createOrEditLabel": "Criar ou editar Benefit",
+        "notFound": "Nenhum Benefit encontrado"
+      },
+      "created": "Um novo Benefit foi criado com o identificador {{ param }}",
+      "updated": "Um Benefit foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Benefit foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Benefit {{ id }}?"
+      },
+      "detail": {
+        "title": "Benefit"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "benefitCode": "Benefit Code",
+      "active": "Active",
+      "tariff": "Tariff",
+      "benefitType": "Benefit Type"
+    }
+  }
+}

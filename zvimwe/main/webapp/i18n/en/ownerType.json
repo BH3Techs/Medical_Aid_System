@@ -1,0 +1,11 @@
+{
+  "medicalAidSystemApp": {
+    "OwnerType": {
+      "null": "",
+      "SPONSOR_DOCUMENT": "SPONSOR_DOCUMENT",
+      "POLICY_DOCUMENT": "POLICY_DOCUMENT",
+      "SERVICE_PROVIDER_DOCUMENT": "SERVICE_PROVIDER_DOCUMENT",
+      "SPONSOR_ADMINISTRATOR": "SPONSOR_ADMINISTRATOR"
+    }
+  }
+}

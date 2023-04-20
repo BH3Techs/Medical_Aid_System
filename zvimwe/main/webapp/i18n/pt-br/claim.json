@@ -1,0 +1,33 @@
+{
+  "medicalAidSystemApp": {
+    "claim": {
+      "home": {
+        "title": "Claims",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Claim",
+        "createOrEditLabel": "Criar ou editar Claim",
+        "notFound": "Nenhum Claim encontrado"
+      },
+      "created": "Um novo Claim foi criado com o identificador {{ param }}",
+      "updated": "Um Claim foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Claim foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Claim {{ id }}?"
+      },
+      "detail": {
+        "title": "Claim"
+      },
+      "id": "ID",
+      "submissionDate": "Submission Date",
+      "approvalDate": "Approval Date",
+      "processingDate": "Processing Date",
+      "claimStatus": "Claim Status",
+      "diagnosis": "Diagnosis",
+      "claimant": "Claimant",
+      "relationshipToMember": "Relationship To Member",
+      "tarrifClaim": "Tarrif Claim",
+      "policy": "Policy",
+      "serviceProvider": "Service Provider"
+    }
+  }
+}

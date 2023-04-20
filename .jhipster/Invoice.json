@@ -1,0 +1,69 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123255",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "invoice",
+  "fields": [
+    {
+      "fieldName": "invoiceNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "invoiceStatus",
+      "fieldType": "InvoiceStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "OPEN,EXPIRED,CLOSED,COLLECTED,VOID"
+    },
+    {
+      "fieldName": "amountPayable",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "invoiceDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nextInvoiceDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "invoiceAmount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "expectedPaymentDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "gracePeriod",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Invoice",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "policy",
+      "ownerSide": true,
+      "relationshipName": "policy",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "contactDetails",
+      "ownerSide": true,
+      "relationshipName": "contactDetails",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

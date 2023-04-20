@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "contactDetails": {
+      "home": {
+        "title": "Contact Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Contact Details",
+        "createOrEditLabel": "Criar ou editar Contact Details",
+        "notFound": "Nenhum Contact Details encontrado"
+      },
+      "created": "Um novo Contact Details foi criado com o identificador {{ param }}",
+      "updated": "Contact Details com identificador {{ param }} foi actualizado",
+      "deleted": "Contact Details com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Contact Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Details"
+      },
+      "id": "ID",
+      "primaryPhoneNumber": "Primary Phone Number",
+      "secondaryPhoneNumber": "Secondary Phone Number",
+      "emailAddress": "Email Address",
+      "physicalAddress": "Physical Address",
+      "whatsappNumber": "Whatsapp Number"
+    }
+  }
+}

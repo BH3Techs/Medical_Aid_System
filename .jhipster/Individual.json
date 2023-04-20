@@ -1,0 +1,64 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123245",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "individual",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "initial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationalId",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^\\d{2}-[0-9]{5}[\\w]\\d{2}$"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Individual",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contactDetails",
+      "ownerSide": true,
+      "relationshipName": "contactDetails",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "bankingDetails",
+      "ownerSide": true,
+      "relationshipName": "bankingDetails",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "riskProfile",
+      "ownerSide": true,
+      "relationshipName": "riskProfile",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

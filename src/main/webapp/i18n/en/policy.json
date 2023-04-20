@@ -1,0 +1,37 @@
+{
+  "medicalAidSystemApp": {
+    "policy": {
+      "home": {
+        "title": "Policies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Policy",
+        "createOrEditLabel": "Create or edit a Policy",
+        "notFound": "No Policies found"
+      },
+      "created": "A new Policy is created with identifier {{ param }}",
+      "updated": "A Policy is updated with identifier {{ param }}",
+      "deleted": "A Policy is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Policy {{ id }}?"
+      },
+      "detail": {
+        "title": "Policy"
+      },
+      "id": "ID",
+      "policyNumber": "Policy Number",
+      "suffix": "Suffix",
+      "pricingGroup": "Pricing Group",
+      "nextOfKin": "Next Of Kin",
+      "memberIdentifier": "Member Identifier",
+      "parentPolicy": "Parent Policy",
+      "sponsorIdentifier": "Sponsor Identifier",
+      "sponsorType": "Sponsor Type",
+      "status": "Status",
+      "balance": "Balance",
+      "planBillingCycle": "Plan Billing Cycle",
+      "claim": "Claim",
+      "nextOfKin": "Next Of Kin",
+      "plans": "Plans"
+    }
+  }
+}

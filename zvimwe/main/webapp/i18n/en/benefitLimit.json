@@ -1,0 +1,29 @@
+{
+  "medicalAidSystemApp": {
+    "benefitLimit": {
+      "home": {
+        "title": "Benefit Limits",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Benefit Limit",
+        "createOrEditLabel": "Create or edit a Benefit Limit",
+        "notFound": "No Benefit Limits found"
+      },
+      "created": "A new Benefit Limit is created with identifier {{ param }}",
+      "updated": "A Benefit Limit is updated with identifier {{ param }}",
+      "deleted": "A Benefit Limit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Benefit Limit {{ id }}?"
+      },
+      "detail": {
+        "title": "Benefit Limit"
+      },
+      "id": "ID",
+      "limitValue": "Limit Value",
+      "limitPeriodUnit": "Limit Period Unit",
+      "limitPeriodValue": "Limit Period Value",
+      "active": "Active",
+      "benefitLimitType": "Benefit Limit Type",
+      "planBenefit": "Plan Benefit"
+    }
+  }
+}

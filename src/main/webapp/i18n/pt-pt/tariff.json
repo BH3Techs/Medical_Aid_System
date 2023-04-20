@@ -1,0 +1,28 @@
+{
+  "medicalAidSystemApp": {
+    "tariff": {
+      "home": {
+        "title": "Tariffs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Tariff",
+        "createOrEditLabel": "Criar ou editar Tariff",
+        "notFound": "Nenhum Tariffs encontrado"
+      },
+      "created": "Um novo Tariff foi criado com o identificador {{ param }}",
+      "updated": "Tariff com identificador {{ param }} foi actualizado",
+      "deleted": "Tariff com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Tariff {{ id }}?"
+      },
+      "detail": {
+        "title": "Tariff"
+      },
+      "id": "ID",
+      "name": "Name",
+      "price": "Price",
+      "active": "Active",
+      "currency": "Currency",
+      "benefit": "Benefit"
+    }
+  }
+}
